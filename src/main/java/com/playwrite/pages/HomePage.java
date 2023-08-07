@@ -1,8 +1,6 @@
 package com.playwrite.pages;
 
 import static com.microsoft.playwright.assertions.PlaywrightAssertions.assertThat;
-import static org.junit.Assert.assertThat;
-
 import com.microsoft.playwright.Page;
 
 public class HomePage {

@@ -1,4 +1,4 @@
-package com.selenium;
+package com.playwrite.base;
 
 import java.io.*;
 import java.nio.file.Paths;
@@ -12,10 +12,10 @@ import com.microsoft.playwright.Playwright;
 import com.microsoft.playwright.Tracing;
 
 import org.testng.*;
-import org.testng.annotations.AfterMethod;
 import org.testng.annotations.AfterTest;
-import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.BeforeTest;
+
+
 
 public class TestBase {
 

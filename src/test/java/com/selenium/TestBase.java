@@ -13,7 +13,9 @@ import com.microsoft.playwright.Tracing;
 
 import org.testng.*;
 import org.testng.annotations.AfterMethod;
+import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.BeforeTest;
 
 public class TestBase {
 
@@ -91,7 +93,7 @@ public class TestBase {
 		selectBrowser(prop.getProperty("browser"));
 	}
 	
-	@BeforeMethod
+	@BeforeTest
 	public void initializeTest() throws Exception
 	{
 
@@ -123,7 +125,7 @@ public class TestBase {
 		//test = report.startTest("ExtentDemo");
 	}
 
-	@AfterMethod
+	@AfterTest
 	public void tearDown()
 	{
 		context.tracing().stop(new Tracing.StopOptions()

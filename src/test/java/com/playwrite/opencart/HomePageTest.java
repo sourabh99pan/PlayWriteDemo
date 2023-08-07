@@ -7,7 +7,7 @@ import org.testng.annotations.Test;
 
 import com.microsoft.playwright.Page;
 import com.playwrite.pages.HomePage;
-import com.selenium.TestBase;
+import com.playwrite.base.TestBase;
 
 import junit.framework.Assert;
 

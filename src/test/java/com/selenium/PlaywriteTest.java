@@ -5,6 +5,7 @@ import org.testng.annotations.Test;
 
 import com.microsoft.playwright.*;
 import com.microsoft.playwright.options.AriaRole;
+import com.playwrite.base.*;
 
 public class PlaywriteTest extends TestBase {
 

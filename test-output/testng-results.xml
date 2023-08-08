@@ -1,25 +1,280 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="0" total="5" passed="5" failed="0" skipped="0">
+<testng-results ignored="0" total="5" passed="0" failed="0" skipped="5">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-08-07T15:14:07 IST" name="Suite" finished-at="2023-08-07T15:14:20 IST" duration-ms="13121">
+  <suite started-at="2023-08-07T18:13:32 IST" name="Suite" finished-at="2023-08-07T21:54:50 IST" duration-ms="13277575">
     <groups>
     </groups>
-    <test started-at="2023-08-07T15:14:07 IST" name="Test" finished-at="2023-08-07T15:14:20 IST" duration-ms="13121">
+    <test started-at="2023-08-07T18:13:32 IST" name="Test" finished-at="2023-08-07T21:54:50 IST" duration-ms="13277575">
       <class name="com.playwrite.opencart.HomePageTest">
-        <test-method is-config="true" signature="initializeTest()[pri:0, instance:com.playwrite.opencart.HomePageTest@6995bf68]" started-at="2023-08-07T15:14:07 IST" name="initializeTest" finished-at="2023-08-07T15:14:12 IST" duration-ms="5113" status="PASS">
+        <test-method is-config="true" signature="initializeTest()[pri:0, instance:com.playwrite.opencart.HomePageTest@97e93f1]" started-at="2023-08-07T18:13:32 IST" name="initializeTest" finished-at="2023-08-07T21:54:50 IST" duration-ms="13277470" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:98)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:375)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.playwrite.base.TestBase.selectBrowser(TestBase.java:68)
+at com.playwrite.base.TestBase.setupUrl(TestBase.java:93)
+at com.playwrite.base.TestBase.initializeTest(TestBase.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.beforeRun(TestRunner.java:633)
+at org.testng.TestRunner.run(TestRunner.java:595)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTest -->
-        <test-method signature="TC_003()[pri:0, instance:com.playwrite.opencart.HomePageTest@6995bf68]" started-at="2023-08-07T15:14:12 IST" name="TC_003" finished-at="2023-08-07T15:14:15 IST" duration-ms="3091" status="PASS">
+        <test-method signature="TC_003()[pri:0, instance:com.playwrite.opencart.HomePageTest@97e93f1]" started-at="2023-08-07T21:54:50 IST" name="TC_003" finished-at="2023-08-07T21:54:50 IST" duration-ms="0" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:98)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:375)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.playwrite.base.TestBase.selectBrowser(TestBase.java:68)
+at com.playwrite.base.TestBase.setupUrl(TestBase.java:93)
+at com.playwrite.base.TestBase.initializeTest(TestBase.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.beforeRun(TestRunner.java:633)
+at org.testng.TestRunner.run(TestRunner.java:595)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_003 -->
-        <test-method signature="TC_004()[pri:0, instance:com.playwrite.opencart.HomePageTest@6995bf68]" started-at="2023-08-07T15:14:15 IST" name="TC_004" finished-at="2023-08-07T15:14:16 IST" duration-ms="550" status="PASS">
+        <test-method signature="TC_004()[pri:0, instance:com.playwrite.opencart.HomePageTest@97e93f1]" started-at="2023-08-07T21:54:50 IST" name="TC_004" finished-at="2023-08-07T21:54:50 IST" duration-ms="0" status="SKIP">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:98)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:375)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.playwrite.base.TestBase.selectBrowser(TestBase.java:68)
+at com.playwrite.base.TestBase.setupUrl(TestBase.java:93)
+at com.playwrite.base.TestBase.initializeTest(TestBase.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.beforeRun(TestRunner.java:633)
+at org.testng.TestRunner.run(TestRunner.java:595)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_004 -->
-        <test-method signature="TC_005(java.lang.String)[pri:0, instance:com.playwrite.opencart.HomePageTest@6995bf68]" started-at="2023-08-07T15:14:16 IST" name="TC_005" data-provider="getProductData" finished-at="2023-08-07T15:14:17 IST" duration-ms="1183" status="PASS">
+        <test-method signature="TC_005(java.lang.String)[pri:0, instance:com.playwrite.opencart.HomePageTest@97e93f1]" started-at="2023-08-07T21:54:50 IST" name="TC_005" data-provider="getProductData" finished-at="2023-08-07T21:54:50 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -27,21 +282,95 @@
               </value>
             </param>
           </params>
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:98)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:375)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.playwrite.base.TestBase.selectBrowser(TestBase.java:68)
+at com.playwrite.base.TestBase.setupUrl(TestBase.java:93)
+at com.playwrite.base.TestBase.initializeTest(TestBase.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.beforeRun(TestRunner.java:633)
+at org.testng.TestRunner.run(TestRunner.java:595)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_005 -->
-        <test-method signature="TC_005(java.lang.String)[pri:0, instance:com.playwrite.opencart.HomePageTest@6995bf68]" started-at="2023-08-07T15:14:17 IST" name="TC_005" data-provider="getProductData" finished-at="2023-08-07T15:14:18 IST" duration-ms="1080" status="PASS">
-          <params>
-            <param index="0">
-              <value>
-                <![CDATA[iMac]]>
-              </value>
-            </param>
-          </params>
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC_005 -->
-        <test-method signature="TC_005(java.lang.String)[pri:0, instance:com.playwrite.opencart.HomePageTest@6995bf68]" started-at="2023-08-07T15:14:18 IST" name="TC_005" data-provider="getProductData" finished-at="2023-08-07T15:14:19 IST" duration-ms="1096" status="PASS">
+        <test-method signature="TC_005(java.lang.String)[pri:0, instance:com.playwrite.opencart.HomePageTest@97e93f1]" started-at="2023-08-07T21:54:50 IST" name="TC_005" data-provider="getProductData" finished-at="2023-08-07T21:54:50 IST" duration-ms="0" status="SKIP">
           <params>
             <param index="0">
               <value>
@@ -49,10 +378,191 @@
               </value>
             </param>
           </params>
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:98)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:375)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.playwrite.base.TestBase.selectBrowser(TestBase.java:68)
+at com.playwrite.base.TestBase.setupUrl(TestBase.java:93)
+at com.playwrite.base.TestBase.initializeTest(TestBase.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.beforeRun(TestRunner.java:633)
+at org.testng.TestRunner.run(TestRunner.java:595)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC_005 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.playwrite.opencart.HomePageTest@6995bf68]" started-at="2023-08-07T15:14:19 IST" name="tearDown" finished-at="2023-08-07T15:14:20 IST" duration-ms="974" status="PASS">
+        <test-method signature="TC_005(java.lang.String)[pri:0, instance:com.playwrite.opencart.HomePageTest@97e93f1]" started-at="2023-08-07T21:54:50 IST" name="TC_005" data-provider="getProductData" finished-at="2023-08-07T21:54:50 IST" duration-ms="0" status="SKIP">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[iMac]]>
+              </value>
+            </param>
+          </params>
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:54)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
+at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
+at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:98)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPageImpl(BrowserContextImpl.java:375)
+at com.microsoft.playwright.impl.BrowserContextImpl.lambda$newPage$13(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:368)
+at com.microsoft.playwright.impl.BrowserContextImpl.newPage(BrowserContextImpl.java:44)
+at com.playwrite.base.TestBase.selectBrowser(TestBase.java:68)
+at com.playwrite.base.TestBase.setupUrl(TestBase.java:93)
+at com.playwrite.base.TestBase.initializeTest(TestBase.java:123)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethodConsideringTimeout(MethodInvocationHelper.java:69)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurationMethod(ConfigInvoker.java:361)
+at org.testng.internal.invokers.ConfigInvoker.invokeConfigurations(ConfigInvoker.java:296)
+at org.testng.TestRunner.invokeTestConfigurations(TestRunner.java:644)
+at org.testng.TestRunner.beforeRun(TestRunner.java:633)
+at org.testng.TestRunner.run(TestRunner.java:595)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:431)
+at org.testng.SuiteRunner.privateRun(SuiteRunner.java:391)
+at org.testng.SuiteRunner.run(SuiteRunner.java:330)
+at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:95)
+at org.testng.TestNG.runSuitesSequentially(TestNG.java:1256)
+at org.testng.TestNG.runSuitesLocally(TestNG.java:1176)
+at org.testng.TestNG.runSuites(TestNG.java:1099)
+at org.testng.TestNG.run(TestNG.java:1067)
+at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:115)
+at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:251)
+at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:77)
+Caused by: com.microsoft.playwright.impl.DriverException: Error {
+  message='Browser closed.
+  name='Error
+  stack='Error: Browser closed.
+    at C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:169:16
+    at new Promise (<anonymous>)
+    at CRSession.send (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crConnection.js:165:12)
+    at FrameSession._initialize (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\chromium\crPage.js:491:32)
+    at async CRBrowserContext.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\browserContext.js:359:25)
+    at async BrowserContextDispatcher.newPage (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\browserContextDispatcher.js:199:55)
+    at async DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-13829137511873856187\package\lib\server\dispatchers\dispatcher.js:312:22)
+}
+at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:226)
+at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
+at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
+... 36 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC_005 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.playwrite.opencart.HomePageTest@97e93f1]" started-at="2023-08-07T21:54:50 IST" name="tearDown" finished-at="2023-08-07T21:54:50 IST" duration-ms="0" status="SKIP">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

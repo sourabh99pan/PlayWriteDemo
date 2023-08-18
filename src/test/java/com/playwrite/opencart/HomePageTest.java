@@ -27,6 +27,7 @@ public class HomePageTest extends TestBase{
             String title = homepage.getHomePageTitle();
             Assert.assertEquals(title, "Your Store");
             
+            
             page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("TC_003.png")));
             
 	

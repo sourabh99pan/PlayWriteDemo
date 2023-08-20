@@ -5,7 +5,7 @@
    <classes>
       <!--  <class name="TestClasses.TelevisionPrice"/> -->
        <!-- <class name="TestClasses.ProductList"/> --> 
-      <class name="com.playwrite.opencart.HomePageTest"/>
+      <class name="com.playwrite.opencart.SearchItems"/>
     </classes>
   </test> <!-- Test -->
 </suite> <!-- Suite -->

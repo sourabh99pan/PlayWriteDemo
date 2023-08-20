@@ -42,4 +42,9 @@ public class HomePage {
 		String header = page.textContent(searchPageHeader);
 		return header;
 	}
+	
+	public SearchPage navigateToSearchResult()
+	{
+		return new SearchPage(page);
+	}
 }

@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.playwrite.opencart.SearchItems">
+      <class name="com.playwright.olympia.Webtables">
         <methods>
           <include name="tearDown"/>
-          <include name="TC_009"/>
           <include name="initializeTest"/>
+          <include name="TC010"/>
         </methods>
-      </class> <!-- com.playwrite.opencart.SearchItems -->
+      </class> <!-- com.playwright.olympia.Webtables -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

@@ -1,6 +1,7 @@
 package com.playwright.olympia;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 
 import org.testng.annotations.Test;
 
@@ -13,7 +14,7 @@ public class ListSelection extends TestBase{
 
 	OlympiaLisePage olympiaListpage;
 	
-	@Test
+	@Test(enabled=false)
 	public void TC011() throws InterruptedException
 	{
 		
@@ -26,5 +27,20 @@ public class ListSelection extends TestBase{
 
 		
 		
+	}
+	
+	@Test
+	public void TC012() throws InterruptedException
+	{
+		
+		olympiaListpage = new OlympiaLisePage(page);
+		page.navigate(prop.getProperty("olympiaUrl"));
+		
+		olympiaListpage.clickOption();
+		ArrayList<String> countryList = new ArrayList<>(Arrays.asList("Istanbul","Paris","Berlin","Rome"));
+		olympiaListpage.dragAndDrop(countryList);
+		
+		olympiaListpage.verifyCountry(countryList);
+	
 	}
 }

@@ -1,5 +1,7 @@
 package com.playwrite.pages;
 
+import java.util.*;
+
 import com.microsoft.playwright.Page;
 
 public class OlympiaLisePage {
@@ -39,5 +41,20 @@ public class OlympiaLisePage {
 		page.isVisible(insertedCountry.replace("*", country));
 	}
 	
+	public void dragAndDrop(List <String>country)
+	{
+		for(String c:country)
+		{
+			page.click(countrySelect.replace("*", c));
+			page.click(selectButton);
+		}		
+	}
+	
+	public void verifyCountry(List <String>country)
+	{	
+		for(String c:country) {
+			page.isVisible(insertedCountry.replace("*", c));
+		}
+	}
 
 }

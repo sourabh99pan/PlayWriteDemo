@@ -3,13 +3,13 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.playwright.olympia.Webtables">
+      <class name="com.playwright.olympia.MenuCheck">
         <methods>
           <include name="tearDown"/>
+          <include name="TC012"/>
           <include name="initializeTest"/>
-          <include name="TC010"/>
         </methods>
-      </class> <!-- com.playwright.olympia.Webtables -->
+      </class> <!-- com.playwright.olympia.MenuCheck -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

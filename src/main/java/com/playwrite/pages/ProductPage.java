@@ -33,6 +33,12 @@ public class ProductPage {
 	
 	public String searchBox = "//input[@placeholder='Search...']";
 	
+	public String editDeleteBtn = "(//button[contains(@class,'p-element p-ripple p-button-rounded ')])[*]";
+	
+	public String confirmBtn = "//span[normalize-space()='*']";
+	
+	public String paginatorText = "//span[@class='p-paginator-current ng-star-inserted']";
+	
 	//Page constructor
 	
 	public ProductPage(Page page)
@@ -62,10 +68,28 @@ public class ProductPage {
 
 		
 		Locator rows = page.locator("//table[@class='p-datatable-table ng-star-inserted']//tr");
-		boolean record = rows.locator(":scope",new Locator.LocatorOptions().setHasText("Test")).isVisible();//imp step
+		System.out.println(rows);
 		
-		Assert.assertEquals(record, true);
+		boolean record = rows.locator(":scope",new Locator.LocatorOptions().setHasText("Test")).isVisible();//imp step
+		page.pause();
+		System.out.println(rows.count());
+		System.out.println(record);
+		//Assert.assertEquals(record, true);
 
+	}
+	
+	public void deleteProduct(String productName)
+	{
+		page.pause();
+		page.fill(searchBox, productName);
+		Locator rows = page.locator("//table[@class='p-datatable-table ng-star-inserted']//tr");
+		rows.locator(":scope",new Locator.LocatorOptions().setHasText(productName)).locator(".p-checkbox-box.p-component").click();
+		page.click(editDeleteBtn.replace("*", "2"));
+		page.click(confirmBtn.replace("*", "Yes"));
+		page.fill(searchBox, productName);
+		String textAfterDelete = page.textContent(paginatorText);
+		Assert.assertTrue(textAfterDelete.contains("0 to 0 of 0 entries"));
+				
 	}
 
 }

@@ -19,6 +19,7 @@ public class ProductCreation extends TestBase {
 		olympiaproductpage.clickOption("Pages");
 		olympiaproductpage.clickOption("Crud");
 		olympiaproductpage.createProduct();
+		olympiaproductpage.deleteProduct("Test");
 
 	}
 

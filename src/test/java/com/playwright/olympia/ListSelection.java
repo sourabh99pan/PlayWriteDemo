@@ -14,7 +14,7 @@ public class ListSelection extends TestBase{
 
 	OlympiaLisePage olympiaListpage;
 	
-	@Test(enabled=false)
+	@Test
 	public void TC011() throws InterruptedException
 	{
 		

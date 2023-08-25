@@ -66,6 +66,7 @@ public class TestBase {
 	            		  .setSnapshots(true)
 	            		  .setSources(true));
 	             page = context.newPage();
+	             page.setViewportSize(1600, 900);
 	             
 	             
 			//}

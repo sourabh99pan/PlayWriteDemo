@@ -9,7 +9,7 @@
       <class name="com.playwright.olympia.ListSelection"/>
       <class name="com.playwright.olympia.MenuCheck"/>
       <class name="com.playwright.olympia.Webtables"/>-->
-      <class name="com.playwright.olympia.ProductCreation"/>
+      <class name="com.playwright.olympia.ListSelection"/>
       
     </classes>
   </test> <!-- Test -->

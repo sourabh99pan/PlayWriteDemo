@@ -4,8 +4,7 @@ import java.io.File;
 import java.io.FileInputStream;
 import java.io.FileOutputStream;
 import java.io.IOException;
-import java.util.HashMap;
-import java.util.Map;
+import java.util.*;
 
 import org.apache.log4j.LogManager;
 import org.apache.log4j.Logger;
@@ -20,8 +19,8 @@ public class ExcelUtils {
 	private static XSSFWorkbook excelWorkbook;
 	private static XSSFCell cell;
 	private static XSSFRow row;
-	private static String sheetPath = System.getProperty("user.dir")+"\\Data\\TestData.xlsx";
-	private static String sheetName = "Userdata";
+	private static String sheetPath = System.getProperty("user.dir")+"\\Data\\OlympicTestData.xlsx";
+	private static String sheetName = "ProductDetails";
 	private static final Logger LOG = LogManager.getLogger(ExcelUtils.class);
 
 	private static void setExcelFile() throws IOException {
@@ -100,10 +99,14 @@ public class ExcelUtils {
 
 	public static void main(String []args) throws Exception {
 		Map<String,String> dataMap = new HashMap<String, String>();
-		dataMap = getData("Nick");
-		for(Map.Entry<String, String> data: dataMap.entrySet()) {
-			LOG.info(data.getKey()+ " ==> " + data.getValue());
-			System.out.println(data.getKey()+ " ==> " + data.getValue());
+		ArrayList<String> list = new <String>ArrayList(Arrays.asList("Bamboo Watch","Black Watch","Blue Band"));
+		for(int i=0;i<list.size();i++)
+		{
+				dataMap = getData(list.get(i));
+				for(Map.Entry<String, String> data: dataMap.entrySet()) {
+					LOG.info(data.getKey()+ " ==> " + data.getValue());
+					System.out.println(data.getKey()+ " ==> " + data.getValue());
+			}
 		}
 	}
 }

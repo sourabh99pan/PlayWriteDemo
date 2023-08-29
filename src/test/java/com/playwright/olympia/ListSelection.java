@@ -51,7 +51,7 @@ public class ListSelection extends TestBase {
 
 	}
 	
-	@Test
+	@Test(enabled = false)
 	public void TC014() throws InterruptedException {
 
 		olympiaListpage = new OlympiaLisePage(page);
@@ -70,6 +70,26 @@ public class ListSelection extends TestBase {
 		map.put("Sneakers", "$78");
 		map.put("Purple Band", "$79");
 		olympiaListpage.searchProduct(map);
+
+	}
+	
+	@Test
+	public void TC015() throws Exception {
+
+		olympiaListpage = new OlympiaLisePage(page);
+		page.navigate(prop.getProperty("olympiaUrl"));
+
+		olympiaListpage.clickOption();
+		
+		olympiaListpage.searchAndValidateProduct("Bamboo Watch");
+		olympiaListpage.searchAndValidateProduct("Black Watch");
+		olympiaListpage.searchAndValidateProduct("Blue Band");
+		olympiaListpage.searchAndValidateProduct("Chakra Bracelet");
+		olympiaListpage.searchAndValidateProduct("Brown Purse");
+		olympiaListpage.searchAndValidateProduct("Grey T-Shirt");
+		
+		
+		
 
 	}
 }

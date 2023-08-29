@@ -5,6 +5,7 @@ import java.util.*;
 import org.testng.Assert;
 
 import com.microsoft.playwright.Page;
+import com.playwright.utils.ExcelUtils;
 
 public class OlympiaLisePage {
 
@@ -25,7 +26,11 @@ public class OlympiaLisePage {
 	public String productOnList = "//div[normalize-space()='*']";
 	
 	public String priceOnList = "//span[normalize-space()='*']";
-
+	
+	public String isAvailable = "//span[contains(@class,'product-badge sm:ml-2 status')]";
+	
+	public String productCategory = "//span[@class='font-semibold']";
+	
 	// Page constructor
 
 	public OlympiaLisePage(Page page) {
@@ -89,8 +94,27 @@ public class OlympiaLisePage {
 			page.fill(searchBox, en.getKey());
 			Assert.assertEquals(page.isVisible(productOnList.replace("*", en.getKey())), true,en.getKey()+"Product name not match");
 			Assert.assertEquals(page.isVisible(priceOnList.replace("*", en.getValue())), true,en.getKey()+" "+en.getValue()+"Price does not match");
-			page.fill(searchBox, "");
+			page.fill(searchBox, " ");
+			
 		}
 	}
+	
+	public void searchAndValidateProduct(String key) throws Exception
+	{
+		Map<String,String> dataMap = new HashMap<String, String>();
+		page.fill(searchBox, key);
+		dataMap = ExcelUtils.getData(key);
+		Assert.assertEquals(page.isVisible(productOnList.replace("*", dataMap.get("Name"))), true,dataMap.get("Name")+"Product name not match");
+		Assert.assertEquals(page.isVisible(priceOnList.replace("*", dataMap.get("Price"))), true,dataMap.get("Price")+"Price does not match");
+		String availableStatus = page.textContent(isAvailable);
+		System.out.println(availableStatus);
+		Assert.assertEquals(availableStatus, dataMap.get("Available"),dataMap.get("Available")+"status does not match");
+		String category = page.textContent(productCategory);
+		System.out.println(category);
+		Assert.assertEquals(category, dataMap.get("Category"),dataMap.get("Category")+"status does not match");	
+		page.fill(searchBox, " ");
+	}
+	
+	
 
 }

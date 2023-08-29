@@ -6,7 +6,7 @@
       <class name="com.playwright.olympia.ListSelection">
         <methods>
           <include name="tearDown"/>
-          <include name="TC014"/>
+          <include name="TC015"/>
           <include name="initializeTest"/>
         </methods>
       </class> <!-- com.playwright.olympia.ListSelection -->

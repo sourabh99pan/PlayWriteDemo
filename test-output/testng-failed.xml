@@ -3,13 +3,14 @@
 <suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Test(failed)">
     <classes>
-      <class name="com.playwright.olympia.ListSelection">
+      <class name="com.playwright.olympia.FileandBarCheck">
         <methods>
           <include name="tearDown"/>
-          <include name="TC015"/>
+          <include name="TC019"/>
           <include name="initializeTest"/>
+          <include name="TC022"/>
         </methods>
-      </class> <!-- com.playwright.olympia.ListSelection -->
+      </class> <!-- com.playwright.olympia.FileandBarCheck -->
     </classes>
   </test> <!-- Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->

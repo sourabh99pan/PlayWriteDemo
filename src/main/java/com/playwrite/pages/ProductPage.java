@@ -71,7 +71,6 @@ public class ProductPage {
 		System.out.println(rows);
 		
 		boolean record = rows.locator(":scope",new Locator.LocatorOptions().setHasText("Test")).isVisible();//imp step
-		page.pause();
 		System.out.println(rows.count());
 		System.out.println(record);
 		//Assert.assertEquals(record, true);
@@ -80,7 +79,6 @@ public class ProductPage {
 	
 	public void deleteProduct(String productName)
 	{
-		page.pause();
 		page.fill(searchBox, productName);
 		Locator rows = page.locator("//table[@class='p-datatable-table ng-star-inserted']//tr");
 		rows.locator(":scope",new Locator.LocatorOptions().setHasText(productName)).locator(".p-checkbox-box.p-component").click();

@@ -5,11 +5,12 @@
    <classes>
       <!--  <class name="TestClasses.TelevisionPrice"/> -->
        <!-- <class name="TestClasses.ProductList"/> --> 
-      <!-- <class name="com.playwright.olympia.FileandBarCheck"/>
+      <class name="com.playwright.olympia.FileandBarCheck"/>
       <class name="com.playwright.olympia.ListSelection"/>
       <class name="com.playwright.olympia.MenuCheck"/>
-      <class name="com.playwright.olympia.Webtables"/>-->
+      <class name="com.playwright.olympia.Webtables"/>
       <class name="com.playwright.olympia.ListSelection"/>
+      <class name="com.playwright.olympia.ProductCreation"/>
       
     </classes>
   </test> <!-- Test -->

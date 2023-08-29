@@ -13,7 +13,7 @@ public class ListSelection extends TestBase {
 
 	OlympiaLisePage olympiaListpage;
 
-	@Test(enabled = false)
+	@Test
 	public void TC011() throws InterruptedException {
 
 		olympiaListpage = new OlympiaLisePage(page);
@@ -25,7 +25,7 @@ public class ListSelection extends TestBase {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void TC012() throws InterruptedException {
 
 		olympiaListpage = new OlympiaLisePage(page);
@@ -39,7 +39,7 @@ public class ListSelection extends TestBase {
 
 	}
 
-	@Test(enabled = false)
+	@Test
 	public void TC013() throws InterruptedException {
 
 		olympiaListpage = new OlympiaLisePage(page);
@@ -51,7 +51,7 @@ public class ListSelection extends TestBase {
 
 	}
 	
-	@Test(enabled = false)
+	@Test
 	public void TC014() throws InterruptedException {
 
 		olympiaListpage = new OlympiaLisePage(page);

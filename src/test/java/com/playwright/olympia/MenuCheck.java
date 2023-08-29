@@ -13,7 +13,7 @@ public class MenuCheck extends TestBase{
 	OlympiaMenuPage olympiamenupage;
 	
 	@Test
-	public void TC012() throws InterruptedException
+	public void TC018() throws InterruptedException
 	{
 		
 		olympiamenupage = new OlympiaMenuPage(page);

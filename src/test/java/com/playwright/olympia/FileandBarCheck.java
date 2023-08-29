@@ -11,18 +11,18 @@ import com.playwrite.pages.OlympiaLisePage;
 public class FileandBarCheck extends TestBase {
 	OlympiaFileNBarPage olympiaFileNBarpage;
 
-	@Test(enabled=false)
-	public void TC013() throws InterruptedException {
+	@Test
+	public void TC019() throws InterruptedException {
 
 		olympiaFileNBarpage = new OlympiaFileNBarPage(page);
 		page.navigate(prop.getProperty("olympiaUrl"));
-
+		olympiaFileNBarpage.clickPerform("Chart");
 		olympiaFileNBarpage.checkGraphVisible("bar");
 
 	}
 
-	@Test(enabled=false)
-	public void TC014() throws InterruptedException {
+	@Test
+	public void TC020() throws InterruptedException {
 
 		olympiaFileNBarpage = new OlympiaFileNBarPage(page);
 		page.navigate(prop.getProperty("olympiaUrl"));
@@ -35,7 +35,7 @@ public class FileandBarCheck extends TestBase {
 	}
 	
 	@Test
-	public void TC015() throws InterruptedException {
+	public void TC021() throws InterruptedException {
 
 		olympiaFileNBarpage = new OlympiaFileNBarPage(page);
 		page.navigate(prop.getProperty("olympiaUrl"));
@@ -46,8 +46,8 @@ public class FileandBarCheck extends TestBase {
 
 	}
 	
-	@Test(enabled=false)
-	public void TC016() throws InterruptedException {
+	@Test
+	public void TC022() throws InterruptedException {
 
 		olympiaFileNBarpage = new OlympiaFileNBarPage(page);
 		page.navigate(prop.getProperty("olympiaUrl"));

@@ -125,6 +125,15 @@ public class TestBase {
 		//report = new ExtentReports(System.getProperty("user.dir")+"ExtentReportResults.html");
 		//test = report.startTest("ExtentDemo");
 	}
+	
+	public static String takeScreenshot(String testName)
+	{
+		
+		String path = System.getProperty("user.dir")+"/screenshot"+testName+".png";
+		page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get(path)).setFullPage(true));
+		return path;
+		
+	}
 
 	@AfterTest
 	public void tearDown()

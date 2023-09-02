@@ -57,9 +57,9 @@ function toggleAllBoxes() {
 <tr>
 <td>Tests passed/Failed/Skipped:</td><td>10/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Tue Aug 29 13:56:12 IST 2023</td>
+<td>Started on:</td><td>Sat Sep 02 15:20:09 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>195 seconds (195866 ms)</td>
+<tr><td>Total time:</td><td>103 seconds (103952 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -76,82 +76,122 @@ function toggleAllBoxes() {
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.playwright.olympia.FileandBarCheck.TC019()'><b>TC019</b><br>Test class: com.playwright.olympia.FileandBarCheck</td>
+<td title='com.playwright.olympia.ListSelection.TC012()'><b>TC012</b><br>Test class: com.playwright.olympia.ListSelection</td>
 <td><div><pre>com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
 =========================== logs ===========================
-navigating to &quot;https://www.primefaces.org/olympia-ng/#/uikit/table&quot;, waiting until &quot;load&quot;
+waiting for locator(&quot;xpath=(//div[@class=&apos;ng-star-inserted&apos;][normalize-space()=&apos;Istanbul&apos;])[1]&quot;)
+  locator resolved to &lt;div class=&quot;ng-star-inserted&quot; _ngcontent-ng-c42826229…&gt;Istanbul&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+element was detached from the DOM, retrying
 ============================================================
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
 =========================== logs ===========================
-navigating to &quot;https://www.primefaces.org/olympia-ng/#/uikit/table&quot;, waiting until &quot;load&quot;
+waiting for locator(&quot;xpath=(//div[@class=&apos;ng-star-inserted&apos;][normalize-space()=&apos;Istanbul&apos;])[1]&quot;)
+  locator resolved to &lt;div class=&quot;ng-star-inserted&quot; _ngcontent-ng-c42826229…&gt;Istanbul&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+element was detached from the DOM, retrying
 ============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\dispatcher.js:312:46)
+    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\dispatcher.js:312:46)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:836)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:586)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
 	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:836)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5282)
-	at com.playwright.olympia.FileandBarCheck.TC019(FileandBarCheck.java:18)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:585)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.playwrite.pages.OlympiaLisePage.dragAndDrop(OlympiaLisePage.java:57)
+	at com.playwright.olympia.ListSelection.TC012(ListSelection.java:36)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
 =========================== logs ===========================
-navigating to &quot;https://www.primefaces.org/olympia-ng/#/uikit/table&quot;, waiting until &quot;load&quot;
+waiting for locator(&quot;xpath=(//div[@class=&apos;ng-star-inserted&apos;][normalize-space()=&apos;Istanbul&apos;])[1]&quot;)
+  locator resolved to &lt;div class=&quot;ng-star-inserted&quot; _ngcontent-ng-c42826229…&gt;Istanbul&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+element was detached from the DOM, retrying
 ============================================================
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
 =========================== logs ===========================
-navigating to &quot;https://www.primefaces.org/olympia-ng/#/uikit/table&quot;, waiting until &quot;load&quot;
+waiting for locator(&quot;xpath=(//div[@class=&apos;ng-star-inserted&apos;][normalize-space()=&apos;Istanbul&apos;])[1]&quot;)
+  locator resolved to &lt;div class=&quot;ng-star-inserted&quot; _ngcontent-ng-c42826229…&gt;Istanbul&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+element was detached from the DOM, retrying
 ============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\dispatcher.js:312:46)
+    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\dispatcher.js:312:46)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-	... 38 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1242688388", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace1242688388'><pre>com.microsoft.playwright.TimeoutError: Error {
+	... 40 more
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1089930529", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1089930529'><pre>com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
 =========================== logs ===========================
-navigating to &quot;https://www.primefaces.org/olympia-ng/#/uikit/table&quot;, waiting until &quot;load&quot;
+waiting for locator(&quot;xpath=(//div[@class=&apos;ng-star-inserted&apos;][normalize-space()=&apos;Istanbul&apos;])[1]&quot;)
+  locator resolved to &lt;div class=&quot;ng-star-inserted&quot; _ngcontent-ng-c42826229…&gt;Istanbul&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+element was detached from the DOM, retrying
 ============================================================
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
 =========================== logs ===========================
-navigating to &quot;https://www.primefaces.org/olympia-ng/#/uikit/table&quot;, waiting until &quot;load&quot;
+waiting for locator(&quot;xpath=(//div[@class=&apos;ng-star-inserted&apos;][normalize-space()=&apos;Istanbul&apos;])[1]&quot;)
+  locator resolved to &lt;div class=&quot;ng-star-inserted&quot; _ngcontent-ng-c42826229…&gt;Istanbul&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+element was detached from the DOM, retrying
 ============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\dispatcher.js:312:46)
+    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\dispatcher.js:312:46)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
 	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
 	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-	at com.microsoft.playwright.impl.FrameImpl.navigateImpl(FrameImpl.java:463)
-	at com.microsoft.playwright.impl.PageImpl.lambda$navigate$45(PageImpl.java:836)
+	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
+	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:586)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
 	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:836)
-	at com.microsoft.playwright.impl.PageImpl.navigate(PageImpl.java:42)
-	at com.microsoft.playwright.Page.navigate(Page.java:5282)
-	at com.playwright.olympia.FileandBarCheck.TC019(FileandBarCheck.java:18)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:585)
+	at com.microsoft.playwright.Page.click(Page.java:3741)
+	at com.playwrite.pages.OlympiaLisePage.dragAndDrop(OlympiaLisePage.java:57)
+	at com.playwright.olympia.ListSelection.TC012(ListSelection.java:36)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -183,25 +223,37 @@ navigating to &quot;https://www.primefaces.org/olympia-ng/#/uikit/table&quot;, w
 Caused by: com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
 =========================== logs ===========================
-navigating to &quot;https://www.primefaces.org/olympia-ng/#/uikit/table&quot;, waiting until &quot;load&quot;
+waiting for locator(&quot;xpath=(//div[@class=&apos;ng-star-inserted&apos;][normalize-space()=&apos;Istanbul&apos;])[1]&quot;)
+  locator resolved to &lt;div class=&quot;ng-star-inserted&quot; _ngcontent-ng-c42826229…&gt;Istanbul&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+element was detached from the DOM, retrying
 ============================================================
   name=&apos;TimeoutError
   stack=&apos;TimeoutError: Timeout 30000ms exceeded.
 =========================== logs ===========================
-navigating to &quot;https://www.primefaces.org/olympia-ng/#/uikit/table&quot;, waiting until &quot;load&quot;
+waiting for locator(&quot;xpath=(//div[@class=&apos;ng-star-inserted&apos;][normalize-space()=&apos;Istanbul&apos;])[1]&quot;)
+  locator resolved to &lt;div class=&quot;ng-star-inserted&quot; _ngcontent-ng-c42826229…&gt;Istanbul&lt;/div&gt;
+attempting click action
+  waiting for element to be visible, enabled and stable
+  element is visible, enabled and stable
+  scrolling into view if needed
+element was detached from the DOM, retrying
 ============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\progress.js:88:26)
-    at Frame.goto (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\frames.js:521:23)
-    at FrameDispatcher.goto (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\frameDispatcher.js:75:121)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\dispatcher.js:312:46)
+    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\dispatcher.js:312:46)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-	... 38 more
+	... 40 more
 </pre></div></td>
-<td>37</td>
-<td>com.playwright.olympia.FileandBarCheck@210ab13f</td></tr>
+<td>30</td>
+<td>com.playwright.olympia.ListSelection@57db2b13</td></tr>
 <tr>
 <td title='com.playwright.olympia.FileandBarCheck.TC022()'><b>TC022</b><br>Test class: com.playwright.olympia.FileandBarCheck</td>
 <td><div><pre>com.microsoft.playwright.TimeoutError: Error {
@@ -222,10 +274,10 @@ attempting click action
   waiting for element to be visible, enabled and stable
     element is not enabled - waiting...
 ============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\dispatcher.js:312:46)
+    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\dispatcher.js:312:46)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
@@ -260,17 +312,17 @@ attempting click action
   waiting for element to be visible, enabled and stable
     element is not enabled - waiting...
 ============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\dispatcher.js:312:46)
+    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\dispatcher.js:312:46)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
 	... 40 more
-... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace2126723403", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace2126723403'><pre>com.microsoft.playwright.TimeoutError: Error {
+... Removed 27 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace201274566", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace201274566'><pre>com.microsoft.playwright.TimeoutError: Error {
   message=&apos;Timeout 30000ms exceeded.
 =========================== logs ===========================
 waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
@@ -288,10 +340,10 @@ attempting click action
   waiting for element to be visible, enabled and stable
     element is not enabled - waiting...
 ============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\dispatcher.js:312:46)
+    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\dispatcher.js:312:46)
 }
 	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
@@ -353,18 +405,18 @@ attempting click action
   waiting for element to be visible, enabled and stable
     element is not enabled - waiting...
 ============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-7961012466287836269\package\lib\server\dispatchers\dispatcher.js:312:46)
+    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\progress.js:88:26)
+    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\frames.js:998:23)
+    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\frameDispatcher.js:151:30)
+    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2193026030547770532\package\lib\server\dispatchers\dispatcher.js:312:46)
 }
 	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
 	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
 	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
 	... 40 more
 </pre></div></td>
-<td>42</td>
-<td>com.playwright.olympia.FileandBarCheck@210ab13f</td></tr>
+<td>31</td>
+<td>com.playwright.olympia.FileandBarCheck@5340477f</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
 <tr><td colspan='4' align='center'><b>PASSED TESTS</b></td></tr>
@@ -375,55 +427,55 @@ attempting click action
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.playwright.olympia.ListSelection.TC011()'><b>TC011</b><br>Test class: com.playwright.olympia.ListSelection</td>
-<td></td>
-<td>16</td>
-<td>com.playwright.olympia.ListSelection@2657d4dd</td></tr>
-<tr>
-<td title='com.playwright.olympia.ListSelection.TC013()'><b>TC013</b><br>Test class: com.playwright.olympia.ListSelection</td>
+<td title='com.playwright.olympia.MenuCheck.TC018()'><b>TC018</b><br>Test class: com.playwright.olympia.MenuCheck</td>
 <td></td>
 <td>1</td>
-<td>com.playwright.olympia.ListSelection@2657d4dd</td></tr>
+<td>com.playwright.olympia.MenuCheck@475c9c31</td></tr>
 <tr>
-<td title='com.playwright.olympia.Webtables.TC010()'><b>TC010</b><br>Test class: com.playwright.olympia.Webtables</td>
+<td title='com.playwright.olympia.FileandBarCheck.TC020()'><b>TC020</b><br>Test class: com.playwright.olympia.FileandBarCheck</td>
 <td></td>
-<td>2</td>
-<td>com.playwright.olympia.Webtables@47caedad</td></tr>
+<td>0</td>
+<td>com.playwright.olympia.FileandBarCheck@5340477f</td></tr>
 <tr>
-<td title='com.playwright.olympia.ProductCreation.TC017()'><b>TC017</b><br>Test class: com.playwright.olympia.ProductCreation</td>
+<td title='com.playwright.olympia.FileandBarCheck.TC019()'><b>TC019</b><br>Test class: com.playwright.olympia.FileandBarCheck</td>
 <td></td>
-<td>15</td>
-<td>com.playwright.olympia.ProductCreation@7139992f</td></tr>
+<td>6</td>
+<td>com.playwright.olympia.FileandBarCheck@5340477f</td></tr>
 <tr>
 <td title='com.playwright.olympia.FileandBarCheck.TC021()'><b>TC021</b><br>Test class: com.playwright.olympia.FileandBarCheck</td>
 <td></td>
-<td>11</td>
-<td>com.playwright.olympia.FileandBarCheck@210ab13f</td></tr>
+<td>1</td>
+<td>com.playwright.olympia.FileandBarCheck@5340477f</td></tr>
 <tr>
-<td title='com.playwright.olympia.ListSelection.TC012()'><b>TC012</b><br>Test class: com.playwright.olympia.ListSelection</td>
+<td title='com.playwright.olympia.ProductCreation.TC017()'><b>TC017</b><br>Test class: com.playwright.olympia.ProductCreation</td>
 <td></td>
-<td>12</td>
-<td>com.playwright.olympia.ListSelection@2657d4dd</td></tr>
+<td>4</td>
+<td>com.playwright.olympia.ProductCreation@5c7bfdc1</td></tr>
 <tr>
 <td title='com.playwright.olympia.ListSelection.TC015()'><b>TC015</b><br>Test class: com.playwright.olympia.ListSelection</td>
 <td></td>
 <td>3</td>
-<td>com.playwright.olympia.ListSelection@2657d4dd</td></tr>
+<td>com.playwright.olympia.ListSelection@57db2b13</td></tr>
 <tr>
-<td title='com.playwright.olympia.FileandBarCheck.TC020()'><b>TC020</b><br>Test class: com.playwright.olympia.FileandBarCheck</td>
+<td title='com.playwright.olympia.Webtables.TC010()'><b>TC010</b><br>Test class: com.playwright.olympia.Webtables</td>
 <td></td>
-<td>25</td>
-<td>com.playwright.olympia.FileandBarCheck@210ab13f</td></tr>
+<td>1</td>
+<td>com.playwright.olympia.Webtables@5c86a017</td></tr>
 <tr>
-<td title='com.playwright.olympia.MenuCheck.TC018()'><b>TC018</b><br>Test class: com.playwright.olympia.MenuCheck</td>
+<td title='com.playwright.olympia.ListSelection.TC011()'><b>TC011</b><br>Test class: com.playwright.olympia.ListSelection</td>
 <td></td>
-<td>2</td>
-<td>com.playwright.olympia.MenuCheck@5340477f</td></tr>
+<td>1</td>
+<td>com.playwright.olympia.ListSelection@57db2b13</td></tr>
+<tr>
+<td title='com.playwright.olympia.ListSelection.TC013()'><b>TC013</b><br>Test class: com.playwright.olympia.ListSelection</td>
+<td></td>
+<td>1</td>
+<td>com.playwright.olympia.ListSelection@57db2b13</td></tr>
 <tr>
 <td title='com.playwright.olympia.ListSelection.TC014()'><b>TC014</b><br>Test class: com.playwright.olympia.ListSelection</td>
 <td></td>
 <td>2</td>
-<td>com.playwright.olympia.ListSelection@2657d4dd</td></tr>
+<td>com.playwright.olympia.ListSelection@57db2b13</td></tr>
 </table><p>
 </body>
 </html>

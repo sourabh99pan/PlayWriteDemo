@@ -16,6 +16,7 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <extentreports-version>5.0.8</extentreports-version>
   </properties>
 
   <dependencies>
@@ -45,12 +46,20 @@
 	    <version>1.35.1</version>
 	</dependency>
    
-   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
-<dependency>
-    <groupId>org.testng</groupId>
-    <artifactId>testng</artifactId>
-    <version>7.7.0</version>
-</dependency>
+	   <!-- https://mvnrepository.com/artifact/org.testng/testng -->
+	<dependency>
+	    <groupId>org.testng</groupId>
+	    <artifactId>testng</artifactId>
+	    <version>7.7.0</version>
+	</dependency>
+	
+	<!-- https://mvnrepository.com/artifact/com.aventstack/extentreports -->
+	<dependency>
+	    <groupId>com.aventstack</groupId>
+	    <artifactId>extentreports</artifactId>
+	    <version>${extentreports-version}</version>
+	</dependency>
+
   
   		<!-- https://mvnrepository.com/artifact/org.apache.poi/poi -->
 		<dependency>

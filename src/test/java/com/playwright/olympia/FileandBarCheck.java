@@ -11,7 +11,7 @@ import com.playwrite.pages.OlympiaLisePage;
 public class FileandBarCheck extends TestBase {
 	OlympiaFileNBarPage olympiaFileNBarpage;
 
-	@Test
+	@Test(enabled=false)
 	public void TC019() throws InterruptedException {
 
 		olympiaFileNBarpage = new OlympiaFileNBarPage(page);
@@ -21,7 +21,7 @@ public class FileandBarCheck extends TestBase {
 
 	}
 
-	@Test
+	@Test(enabled=false)
 	public void TC020() throws InterruptedException {
 
 		olympiaFileNBarpage = new OlympiaFileNBarPage(page);

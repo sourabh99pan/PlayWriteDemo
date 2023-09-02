@@ -55,11 +55,11 @@ function toggleAllBoxes() {
 <body>
 <h2 align='center'>Test</h2><table border='1' align="center">
 <tr>
-<td>Tests passed/Failed/Skipped:</td><td>9/1/0</td>
+<td>Tests passed/Failed/Skipped:</td><td>8/2/0</td>
 </tr><tr>
-<td>Started on:</td><td>Sat Sep 02 16:33:09 IST 2023</td>
+<td>Started on:</td><td>Sat Sep 02 16:40:37 IST 2023</td>
 </tr>
-<tr><td>Total time:</td><td>78 seconds (78710 ms)</td>
+<tr><td>Total time:</td><td>48 seconds (48654 ms)</td>
 </tr><tr>
 <td>Included groups:</td><td></td>
 </tr><tr>
@@ -77,113 +77,49 @@ function toggleAllBoxes() {
 </tr>
 <tr>
 <td title='com.playwright.olympia.FileandBarCheck.TC022()'><b>TC022</b><br>Test class: com.playwright.olympia.FileandBarCheck</td>
-<td><div><pre>com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:586)
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Cannot get file size.
+	at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:170)
+	at com.microsoft.playwright.impl.FrameImpl.setInputFilesImpl(FrameImpl.java:764)
+	at com.microsoft.playwright.impl.PageImpl.lambda$setInputFiles$74(PageImpl.java:1171)
 	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
 	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:585)
-	at com.microsoft.playwright.Page.click(Page.java:3741)
-	at com.playwrite.pages.OlympiaFileNBarPage.removefile(OlympiaFileNBarPage.java:65)
-	at com.playwright.olympia.FileandBarCheck.TC022(FileandBarCheck.java:58)
+	at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1170)
+	at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1165)
+	at com.microsoft.playwright.Page.setInputFiles(Page.java:6745)
+	at com.playwrite.pages.OlympiaFileNBarPage.chooseAndUploadFile(OlympiaFileNBarPage.java:55)
+	at com.playwright.olympia.FileandBarCheck.TC022(FileandBarCheck.java:57)
 	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
 	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-	... 34 more
-... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace322028601", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
-<div class='stack-trace' id='stack-trace322028601'><pre>com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:586)
+Caused by: java.nio.file.NoSuchFileException: TC_001.png
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1843)
+	at java.base/java.nio.file.Files.size(Files.java:2460)
+	at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:168)
+	... 33 more
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace401839202", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace401839202'><pre>com.microsoft.playwright.PlaywrightException: Cannot get file size.
+	at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:170)
+	at com.microsoft.playwright.impl.FrameImpl.setInputFilesImpl(FrameImpl.java:764)
+	at com.microsoft.playwright.impl.PageImpl.lambda$setInputFiles$74(PageImpl.java:1171)
 	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
 	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
 	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:585)
-	at com.microsoft.playwright.Page.click(Page.java:3741)
-	at com.playwrite.pages.OlympiaFileNBarPage.removefile(OlympiaFileNBarPage.java:65)
-	at com.playwright.olympia.FileandBarCheck.TC022(FileandBarCheck.java:58)
+	at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1170)
+	at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1165)
+	at com.microsoft.playwright.Page.setInputFiles(Page.java:6745)
+	at com.playwrite.pages.OlympiaFileNBarPage.chooseAndUploadFile(OlympiaFileNBarPage.java:55)
+	at com.playwright.olympia.FileandBarCheck.TC022(FileandBarCheck.java:57)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -206,35 +142,100 @@ attempting click action
 	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 	at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-	... 34 more
+Caused by: java.nio.file.NoSuchFileException: TC_001.png
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1843)
+	at java.base/java.nio.file.Files.size(Files.java:2460)
+	at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:168)
+	... 33 more
 </pre></div></td>
-<td>31</td>
+<td>1</td>
+<td>com.playwright.olympia.FileandBarCheck@609640d5</td></tr>
+<tr>
+<td title='com.playwright.olympia.FileandBarCheck.TC021()'><b>TC021</b><br>Test class: com.playwright.olympia.FileandBarCheck</td>
+<td><div><pre>com.microsoft.playwright.PlaywrightException: Cannot get file size.
+	at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:170)
+	at com.microsoft.playwright.impl.FrameImpl.setInputFilesImpl(FrameImpl.java:764)
+	at com.microsoft.playwright.impl.PageImpl.lambda$setInputFiles$74(PageImpl.java:1171)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1170)
+	at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1165)
+	at com.microsoft.playwright.Page.setInputFiles(Page.java:6745)
+	at com.playwrite.pages.OlympiaFileNBarPage.chooseAndUploadFile(OlympiaFileNBarPage.java:55)
+	at com.playwright.olympia.FileandBarCheck.TC021(FileandBarCheck.java:45)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.nio.file.NoSuchFileException: TC_001.png
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1843)
+	at java.base/java.nio.file.Files.size(Files.java:2460)
+	at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:168)
+	... 33 more
+... Removed 17 stack frames</pre></div><a href='#' onClick='toggleBox("stack-trace1156766997", this, "Click to show all stack frames", "Click to hide stack frames")'>Click to show all stack frames</a>
+<div class='stack-trace' id='stack-trace1156766997'><pre>com.microsoft.playwright.PlaywrightException: Cannot get file size.
+	at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:170)
+	at com.microsoft.playwright.impl.FrameImpl.setInputFilesImpl(FrameImpl.java:764)
+	at com.microsoft.playwright.impl.PageImpl.lambda$setInputFiles$74(PageImpl.java:1171)
+	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+	at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1170)
+	at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1165)
+	at com.microsoft.playwright.Page.setInputFiles(Page.java:6745)
+	at com.playwrite.pages.OlympiaFileNBarPage.chooseAndUploadFile(OlympiaFileNBarPage.java:55)
+	at com.playwright.olympia.FileandBarCheck.TC021(FileandBarCheck.java:45)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+	at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+	at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+	at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+	at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+	at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+	at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+	at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+	at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+	at org.testng.TestRunner.privateRun(TestRunner.java:829)
+	at org.testng.TestRunner.run(TestRunner.java:602)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+	at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+	at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+	at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.nio.file.NoSuchFileException: TC_001.png
+	at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+	at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+	at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+	at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+	at java.base/java.nio.file.Files.readAttributes(Files.java:1843)
+	at java.base/java.nio.file.Files.size(Files.java:2460)
+	at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:168)
+	... 33 more
+</pre></div></td>
+<td>6</td>
 <td>com.playwright.olympia.FileandBarCheck@609640d5</td></tr>
 </table><p>
 <table width='100%' border='1' class='invocation-passed'>
@@ -246,50 +247,45 @@ attempting click action
 <td><b>Instance</b></td>
 </tr>
 <tr>
-<td title='com.playwright.olympia.ListSelection.TC012()'><b>TC012</b><br>Test class: com.playwright.olympia.ListSelection</td>
+<td title='com.playwright.olympia.ProductCreation.TC017()'><b>TC017</b><br>Test class: com.playwright.olympia.ProductCreation</td>
 <td></td>
-<td>2</td>
-<td>com.playwright.olympia.ListSelection@55b5f5d2</td></tr>
-<tr>
-<td title='com.playwright.olympia.FileandBarCheck.TC021()'><b>TC021</b><br>Test class: com.playwright.olympia.FileandBarCheck</td>
-<td></td>
-<td>7</td>
-<td>com.playwright.olympia.FileandBarCheck@609640d5</td></tr>
-<tr>
-<td title='com.playwright.olympia.MenuCheck.TC018()'><b>TC018</b><br>Test class: com.playwright.olympia.MenuCheck</td>
-<td></td>
-<td>3</td>
-<td>com.playwright.olympia.MenuCheck@5bfa8cc5</td></tr>
+<td>5</td>
+<td>com.playwright.olympia.ProductCreation@749c877b</td></tr>
 <tr>
 <td title='com.playwright.olympia.Webtables.TC010()'><b>TC010</b><br>Test class: com.playwright.olympia.Webtables</td>
 <td></td>
 <td>2</td>
 <td>com.playwright.olympia.Webtables@666b83a4</td></tr>
 <tr>
-<td title='com.playwright.olympia.ListSelection.TC015()'><b>TC015</b><br>Test class: com.playwright.olympia.ListSelection</td>
+<td title='com.playwright.olympia.ListSelection.TC011()'><b>TC011</b><br>Test class: com.playwright.olympia.ListSelection</td>
+<td></td>
+<td>3</td>
+<td>com.playwright.olympia.ListSelection@55b5f5d2</td></tr>
+<tr>
+<td title='com.playwright.olympia.ListSelection.TC012()'><b>TC012</b><br>Test class: com.playwright.olympia.ListSelection</td>
 <td></td>
 <td>2</td>
 <td>com.playwright.olympia.ListSelection@55b5f5d2</td></tr>
-<tr>
-<td title='com.playwright.olympia.ListSelection.TC013()'><b>TC013</b><br>Test class: com.playwright.olympia.ListSelection</td>
-<td></td>
-<td>1</td>
-<td>com.playwright.olympia.ListSelection@55b5f5d2</td></tr>
-<tr>
-<td title='com.playwright.olympia.ProductCreation.TC017()'><b>TC017</b><br>Test class: com.playwright.olympia.ProductCreation</td>
-<td></td>
-<td>5</td>
-<td>com.playwright.olympia.ProductCreation@749c877b</td></tr>
 <tr>
 <td title='com.playwright.olympia.ListSelection.TC014()'><b>TC014</b><br>Test class: com.playwright.olympia.ListSelection</td>
 <td></td>
 <td>2</td>
 <td>com.playwright.olympia.ListSelection@55b5f5d2</td></tr>
 <tr>
-<td title='com.playwright.olympia.ListSelection.TC011()'><b>TC011</b><br>Test class: com.playwright.olympia.ListSelection</td>
+<td title='com.playwright.olympia.ListSelection.TC013()'><b>TC013</b><br>Test class: com.playwright.olympia.ListSelection</td>
+<td></td>
+<td>2</td>
+<td>com.playwright.olympia.ListSelection@55b5f5d2</td></tr>
+<tr>
+<td title='com.playwright.olympia.ListSelection.TC015()'><b>TC015</b><br>Test class: com.playwright.olympia.ListSelection</td>
 <td></td>
 <td>3</td>
 <td>com.playwright.olympia.ListSelection@55b5f5d2</td></tr>
+<tr>
+<td title='com.playwright.olympia.MenuCheck.TC018()'><b>TC018</b><br>Test class: com.playwright.olympia.MenuCheck</td>
+<td></td>
+<td>1</td>
+<td>com.playwright.olympia.MenuCheck@5bfa8cc5</td></tr>
 </table><p>
 </body>
 </html>

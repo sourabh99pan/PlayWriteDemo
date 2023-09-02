@@ -129,7 +129,7 @@ public class TestBase {
 	public static String takeScreenshot(String testName)
 	{
 		
-		String path = System.getProperty("user.dir")+"/screenshot"+testName+".png";
+		String path = System.getProperty("user.dir")+"\\Screenshots\\"+testName+".png";
 		page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get(path)).setFullPage(true));
 		return path;
 		

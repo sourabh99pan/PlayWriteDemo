@@ -1,125 +1,75 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="10" total="20" passed="9" failed="1" skipped="0">
+<testng-results ignored="10" total="20" passed="8" failed="2" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-02T16:33:09 IST" name="playwright demo" finished-at="2023-09-02T16:34:28 IST" duration-ms="78710">
+  <suite started-at="2023-09-02T16:40:37 IST" name="playwright demo" finished-at="2023-09-02T16:41:26 IST" duration-ms="48654">
     <groups>
     </groups>
-    <test started-at="2023-09-02T16:33:09 IST" name="Test" finished-at="2023-09-02T16:34:28 IST" duration-ms="78710">
+    <test started-at="2023-09-02T16:40:37 IST" name="Test" finished-at="2023-09-02T16:41:26 IST" duration-ms="48654">
       <class name="com.playwright.olympia.Webtables">
-        <test-method signature="TC010()[pri:0, instance:com.playwright.olympia.Webtables@666b83a4]" started-at="2023-09-02T16:33:57 IST" name="TC010" finished-at="2023-09-02T16:34:00 IST" duration-ms="2973" status="PASS">
+        <test-method signature="TC010()[pri:0, instance:com.playwright.olympia.Webtables@666b83a4]" started-at="2023-09-02T16:40:52 IST" name="TC010" finished-at="2023-09-02T16:40:55 IST" duration-ms="2378" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC010 -->
       </class> <!-- com.playwright.olympia.Webtables -->
       <class name="com.playwright.olympia.MenuCheck">
-        <test-method signature="TC018()[pri:0, instance:com.playwright.olympia.MenuCheck@5bfa8cc5]" started-at="2023-09-02T16:33:53 IST" name="TC018" finished-at="2023-09-02T16:33:56 IST" duration-ms="3111" status="PASS">
+        <test-method signature="TC018()[pri:0, instance:com.playwright.olympia.MenuCheck@5bfa8cc5]" started-at="2023-09-02T16:40:50 IST" name="TC018" finished-at="2023-09-02T16:40:52 IST" duration-ms="1695" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC018 -->
       </class> <!-- com.playwright.olympia.MenuCheck -->
       <class name="com.playwright.olympia.ProductCreation">
-        <test-method signature="TC017()[pri:0, instance:com.playwright.olympia.ProductCreation@749c877b]" started-at="2023-09-02T16:34:17 IST" name="TC017" finished-at="2023-09-02T16:34:22 IST" duration-ms="5035" status="PASS">
+        <test-method signature="TC017()[pri:0, instance:com.playwright.olympia.ProductCreation@749c877b]" started-at="2023-09-02T16:41:15 IST" name="TC017" finished-at="2023-09-02T16:41:21 IST" duration-ms="5997" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC017 -->
       </class> <!-- com.playwright.olympia.ProductCreation -->
       <class name="com.playwright.olympia.ListSelection">
-        <test-method signature="TC011()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:34:03 IST" name="TC011" finished-at="2023-09-02T16:34:06 IST" duration-ms="3146" status="PASS">
+        <test-method signature="TC011()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:40:58 IST" name="TC011" finished-at="2023-09-02T16:41:01 IST" duration-ms="3040" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC011 -->
-        <test-method signature="TC012()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:34:06 IST" name="TC012" finished-at="2023-09-02T16:34:08 IST" duration-ms="2061" status="PASS">
+        <test-method signature="TC012()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:41:01 IST" name="TC012" finished-at="2023-09-02T16:41:04 IST" duration-ms="2094" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC012 -->
-        <test-method signature="TC013()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:34:09 IST" name="TC013" finished-at="2023-09-02T16:34:11 IST" duration-ms="1908" status="PASS">
+        <test-method signature="TC013()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:41:04 IST" name="TC013" finished-at="2023-09-02T16:41:06 IST" duration-ms="2005" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC013 -->
-        <test-method signature="TC014()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:34:11 IST" name="TC014" finished-at="2023-09-02T16:34:14 IST" duration-ms="2676" status="PASS">
+        <test-method signature="TC014()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:41:06 IST" name="TC014" finished-at="2023-09-02T16:41:09 IST" duration-ms="2734" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC014 -->
-        <test-method signature="TC015()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:34:14 IST" name="TC015" finished-at="2023-09-02T16:34:17 IST" duration-ms="2806" status="PASS">
+        <test-method signature="TC015()[pri:0, instance:com.playwright.olympia.ListSelection@55b5f5d2]" started-at="2023-09-02T16:41:11 IST" name="TC015" finished-at="2023-09-02T16:41:14 IST" duration-ms="3075" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC015 -->
       </class> <!-- com.playwright.olympia.ListSelection -->
       <class name="com.playwright.olympia.FileandBarCheck">
-        <test-method is-config="true" signature="initializeTest()[pri:0, instance:com.playwright.olympia.FileandBarCheck@609640d5]" started-at="2023-09-02T16:33:09 IST" name="initializeTest" finished-at="2023-09-02T16:33:14 IST" duration-ms="4964" status="PASS">
+        <test-method is-config="true" signature="initializeTest()[pri:0, instance:com.playwright.olympia.FileandBarCheck@609640d5]" started-at="2023-09-02T16:40:37 IST" name="initializeTest" finished-at="2023-09-02T16:40:42 IST" duration-ms="4692" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTest -->
-        <test-method signature="TC021()[pri:0, instance:com.playwright.olympia.FileandBarCheck@609640d5]" started-at="2023-09-02T16:33:14 IST" name="TC021" finished-at="2023-09-02T16:33:21 IST" duration-ms="7359" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC021 -->
-        <test-method signature="TC022()[pri:0, instance:com.playwright.olympia.FileandBarCheck@609640d5]" started-at="2023-09-02T16:33:22 IST" name="TC022" finished-at="2023-09-02T16:33:53 IST" duration-ms="31481" status="FAIL">
-          <exception class="com.microsoft.playwright.TimeoutError">
+        <test-method signature="TC021()[pri:0, instance:com.playwright.olympia.FileandBarCheck@609640d5]" started-at="2023-09-02T16:40:42 IST" name="TC021" finished-at="2023-09-02T16:40:49 IST" duration-ms="6525" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
             <message>
-              <![CDATA[Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("xpath=//span[normalize-space()='Cancel']")
-  locator resolved to <span class="p-button-label ng-star-inserted">Cancel</span>
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("xpath=//span[normalize-space()='Cancel']")
-  locator resolved to <span class="p-button-label ng-star-inserted">Cancel</span>
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\dispatcher.js:312:46)
-}]]>
+              <![CDATA[Cannot get file size.]]>
             </message>
             <full-stacktrace>
-              <![CDATA[com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("xpath=//span[normalize-space()='Cancel']")
-  locator resolved to <span class="p-button-label ng-star-inserted">Cancel</span>
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("xpath=//span[normalize-space()='Cancel']")
-  locator resolved to <span class="p-button-label ng-star-inserted">Cancel</span>
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
-at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:586)
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot get file size.
+at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:170)
+at com.microsoft.playwright.impl.FrameImpl.setInputFilesImpl(FrameImpl.java:764)
+at com.microsoft.playwright.impl.PageImpl.lambda$setInputFiles$74(PageImpl.java:1171)
 at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
 at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
 at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
 at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:585)
-at com.microsoft.playwright.Page.click(Page.java:3741)
-at com.playwrite.pages.OlympiaFileNBarPage.removefile(OlympiaFileNBarPage.java:65)
-at com.playwright.olympia.FileandBarCheck.TC022(FileandBarCheck.java:58)
+at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1170)
+at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1165)
+at com.microsoft.playwright.Page.setInputFiles(Page.java:6745)
+at com.playwrite.pages.OlympiaFileNBarPage.chooseAndUploadFile(OlympiaFileNBarPage.java:55)
+at com.playwright.olympia.FileandBarCheck.TC021(FileandBarCheck.java:45)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
 at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
 at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
@@ -142,40 +92,82 @@ at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
 at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
 at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
 at java.base/java.lang.Thread.run(Thread.java:832)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message='Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("xpath=//span[normalize-space()='Cancel']")
-  locator resolved to <span class="p-button-label ng-star-inserted">Cancel</span>
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-  name='TimeoutError
-  stack='TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator("xpath=//span[normalize-space()='Cancel']")
-  locator resolved to <span class="p-button-label ng-star-inserted">Cancel</span>
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-2113522793927987148\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
-at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-... 34 more
+Caused by: java.nio.file.NoSuchFileException: TC_001.png
+at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+at java.base/java.nio.file.Files.readAttributes(Files.java:1843)
+at java.base/java.nio.file.Files.size(Files.java:2460)
+at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:168)
+... 33 more
 ]]>
             </full-stacktrace>
-          </exception> <!-- com.microsoft.playwright.TimeoutError -->
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- TC021 -->
+        <test-method signature="TC022()[pri:0, instance:com.playwright.olympia.FileandBarCheck@609640d5]" started-at="2023-09-02T16:40:49 IST" name="TC022" finished-at="2023-09-02T16:40:50 IST" duration-ms="1113" status="FAIL">
+          <exception class="com.microsoft.playwright.PlaywrightException">
+            <message>
+              <![CDATA[Cannot get file size.]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[com.microsoft.playwright.PlaywrightException: Cannot get file size.
+at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:170)
+at com.microsoft.playwright.impl.FrameImpl.setInputFilesImpl(FrameImpl.java:764)
+at com.microsoft.playwright.impl.PageImpl.lambda$setInputFiles$74(PageImpl.java:1171)
+at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
+at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
+at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
+at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1170)
+at com.microsoft.playwright.impl.PageImpl.setInputFiles(PageImpl.java:1165)
+at com.microsoft.playwright.Page.setInputFiles(Page.java:6745)
+at com.playwrite.pages.OlympiaFileNBarPage.chooseAndUploadFile(OlympiaFileNBarPage.java:55)
+at com.playwright.olympia.FileandBarCheck.TC022(FileandBarCheck.java:57)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:64)
+at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43)
+at java.base/java.lang.reflect.Method.invoke(Method.java:564)
+at org.testng.internal.invokers.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:139)
+at org.testng.internal.invokers.TestInvoker.invokeMethod(TestInvoker.java:677)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethod(TestInvoker.java:221)
+at org.testng.internal.invokers.MethodRunner.runInSequence(MethodRunner.java:50)
+at org.testng.internal.invokers.TestInvoker$MethodInvocationAgent.invoke(TestInvoker.java:969)
+at org.testng.internal.invokers.TestInvoker.invokeTestMethods(TestInvoker.java:194)
+at org.testng.internal.invokers.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:148)
+at org.testng.internal.invokers.TestMethodWorker.run(TestMethodWorker.java:128)
+at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
+at org.testng.TestRunner.privateRun(TestRunner.java:829)
+at org.testng.TestRunner.run(TestRunner.java:602)
+at org.testng.SuiteRunner.runTest(SuiteRunner.java:437)
+at org.testng.SuiteRunner$SuiteWorker.run(SuiteRunner.java:475)
+at org.testng.internal.thread.ThreadUtil.lambda$execute$0(ThreadUtil.java:58)
+at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1130)
+at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:630)
+at java.base/java.lang.Thread.run(Thread.java:832)
+Caused by: java.nio.file.NoSuchFileException: TC_001.png
+at java.base/sun.nio.fs.WindowsException.translateToIOException(WindowsException.java:85)
+at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:103)
+at java.base/sun.nio.fs.WindowsException.rethrowAsIOException(WindowsException.java:108)
+at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:53)
+at java.base/sun.nio.fs.WindowsFileAttributeViews$Basic.readAttributes(WindowsFileAttributeViews.java:38)
+at java.base/sun.nio.fs.WindowsFileSystemProvider.readAttributes(WindowsFileSystemProvider.java:198)
+at java.base/java.nio.file.Files.readAttributes(Files.java:1843)
+at java.base/java.nio.file.Files.size(Files.java:2460)
+at com.microsoft.playwright.impl.Utils.hasLargeFile(Utils.java:168)
+... 33 more
+]]>
+            </full-stacktrace>
+          </exception> <!-- com.microsoft.playwright.PlaywrightException -->
           <reporter-output>
           </reporter-output>
         </test-method> <!-- TC022 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.playwright.olympia.FileandBarCheck@609640d5]" started-at="2023-09-02T16:34:23 IST" name="tearDown" finished-at="2023-09-02T16:34:28 IST" duration-ms="5088" status="PASS">
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.playwright.olympia.FileandBarCheck@609640d5]" started-at="2023-09-02T16:41:21 IST" name="tearDown" finished-at="2023-09-02T16:41:26 IST" duration-ms="5271" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->

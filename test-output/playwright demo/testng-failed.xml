@@ -9,6 +9,7 @@
       <class name="com.playwright.olympia.FileandBarCheck">
         <methods>
           <include name="tearDown"/>
+          <include name="TC021"/>
           <include name="initializeTest"/>
           <include name="TC022"/>
         </methods>

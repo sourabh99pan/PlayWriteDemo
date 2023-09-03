@@ -42,7 +42,7 @@ public class FileandBarCheck extends TestBase {
 
 		olympiaFileNBarpage.clickPerform("File");
 		page.waitForSelector("//span[text()='Choose']");
-		olympiaFileNBarpage.chooseAndUploadFile("TC_001.png");
+		olympiaFileNBarpage.chooseAndUploadFile("Image1.png");
 
 	}
 	
@@ -54,7 +54,7 @@ public class FileandBarCheck extends TestBase {
 
 		olympiaFileNBarpage.clickPerform("File");
 		page.waitForSelector("//span[text()='Choose']");
-		olympiaFileNBarpage.chooseAndUploadFile("TC_001.png");
+		olympiaFileNBarpage.chooseAndUploadFile("Image1.png");
 		olympiaFileNBarpage.removefile();
 
 	}

@@ -6,8 +6,8 @@ import java.io.FileOutputStream;
 import java.io.IOException;
 import java.util.*;
 
-import org.apache.log4j.LogManager;
-import org.apache.log4j.Logger;
+//import org.apache.log4j.LogManager;
+//import org.apache.log4j.Logger;
 import org.apache.poi.ss.usermodel.CellType;
 import org.apache.poi.xssf.usermodel.XSSFCell;
 import org.apache.poi.xssf.usermodel.XSSFRow;
@@ -21,10 +21,10 @@ public class ExcelUtils {
 	private static XSSFRow row;
 	private static String sheetPath = System.getProperty("user.dir")+"\\Data\\OlympicTestData.xlsx";
 	private static String sheetName = "ProductDetails";
-	private static final Logger LOG = LogManager.getLogger(ExcelUtils.class);
+	//private static final Logger LOG = LogManager.getLogger(ExcelUtils.class);
 
 	private static void setExcelFile() throws IOException {
-			LOG.info("Getting sheets from the workbook.");
+			//LOG.info("Getting sheets from the workbook.");
 			FileInputStream excelFile = new FileInputStream(new File(sheetPath).getAbsolutePath());
 			excelWorkbook = new XSSFWorkbook(excelFile);
 			excelSheet = excelWorkbook.getSheet(sheetName);
@@ -54,7 +54,7 @@ public class ExcelUtils {
 		try{
 			row = excelSheet.getRow(rowNumb);
 			cell = row.getCell(colNumb);
-			LOG.info("Setting results into the excel sheet.");
+			//LOG.info("Setting results into the excel sheet.");
 			if(cell==null){
 				cell = row.createCell(colNumb);
 				cell.setCellValue(result);
@@ -63,14 +63,15 @@ public class ExcelUtils {
 				cell.setCellValue(result);
 			}
 
-			LOG.info("Creating file output stream.");
+			//LOG.info("Creating file output stream.");
 			FileOutputStream fileOut = new FileOutputStream(sheetPath + sheetName);
 			excelWorkbook.write(fileOut);
 			fileOut.flush();
 			fileOut.close();
 
 		}catch(Exception exp){
-			LOG.info("Exception occured in setCellData: "+exp);
+			//LOG.info("Exception occured in setCellData: "+exp);
+			System.out.println("Exception occured in setCellData: "+exp);
 		}
 	}
 
@@ -78,7 +79,7 @@ public class ExcelUtils {
 		Map dataMap = new HashMap<String, String>();
 			setExcelFile();
 			int dataRow = getDataRow(dataKey.trim(), 0);
-			LOG.info("Test Data Found in Row: "+dataRow);
+			//LOG.info("Test Data Found in Row: "+dataRow);
 			if (dataRow == 0) {
 				throw new Exception("NO DATA FOUND for dataKey: "+dataKey);
 			}
@@ -104,7 +105,7 @@ public class ExcelUtils {
 		{
 				dataMap = getData(list.get(i));
 				for(Map.Entry<String, String> data: dataMap.entrySet()) {
-					LOG.info(data.getKey()+ " ==> " + data.getValue());
+					//LOG.info(data.getKey()+ " ==> " + data.getValue());
 					System.out.println(data.getKey()+ " ==> " + data.getValue());
 			}
 		}

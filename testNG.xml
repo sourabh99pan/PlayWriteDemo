@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
   <!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
-<suite name="playwright demo" thread-count="2" parallel = "tests">
+<suite name="playwright demo" >
 <listeners>
 <listener class-name = "com.playwright.listeners.ReportListener"/>
 </listeners>

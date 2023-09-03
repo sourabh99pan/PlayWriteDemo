@@ -25,7 +25,7 @@
       <span class="top-banner-title-font">Test results</span>
       <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
       <br/>
-      <span class="top-banner-font-1">1 suite, 1 failed test</span>
+      <span class="top-banner-font-1">1 suite</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -39,7 +39,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" panel-name="suite-playwright_demo" class="navigator-link">
-              <span class="suite-name border-failed">playwright demo</span>
+              <span class="suite-name border-passed">playwright demo</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -92,21 +92,7 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">12 methods, 1 failed,   11 passed</span>
-                  </li>
-                  <li>
-                    <span class="method-list-title failed">Failed methods</span>
-                    <span class="show-or-hide-methods failed">
-                      <a href="#" panel-name="suite-playwright_demo" class="hide-methods failed suite-playwright_demo"> (hide)</a> <!-- hide-methods failed suite-playwright_demo -->
-                      <a href="#" panel-name="suite-playwright_demo" class="show-methods failed suite-playwright_demo"> (show)</a> <!-- show-methods failed suite-playwright_demo -->
-                    </span>
-                    <div class="method-list-content failed suite-playwright_demo">
-                      <span>
-                        <img src="failed.png" width="3%"/>
-                        <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.FileandBarCheck" class="method navigator-link" hash-for-method="TC022">TC022</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                    </div> <!-- method-list-content failed suite-playwright_demo -->
+                    <span class="method-stats">3 methods,   3 passed</span>
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -115,46 +101,6 @@
                       <a href="#" panel-name="suite-playwright_demo" class="show-methods passed suite-playwright_demo"> (show)</a> <!-- show-methods passed suite-playwright_demo -->
                     </span>
                     <div class="method-list-content passed suite-playwright_demo">
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.Webtables" class="method navigator-link" hash-for-method="TC010">TC010</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.ListSelection" class="method navigator-link" hash-for-method="TC011">TC011</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.ListSelection" class="method navigator-link" hash-for-method="TC012">TC012</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.ListSelection" class="method navigator-link" hash-for-method="TC013">TC013</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.ListSelection" class="method navigator-link" hash-for-method="TC014">TC014</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.ListSelection" class="method navigator-link" hash-for-method="TC015">TC015</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.ProductCreation" class="method navigator-link" hash-for-method="TC017">TC017</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
-                      <span>
-                        <img src="passed.png" width="3%"/>
-                        <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.MenuCheck" class="method navigator-link" hash-for-method="TC018">TC018</a> <!-- method navigator-link -->
-                      </span>
-                      <br/>
                       <span>
                         <img src="passed.png" width="3%"/>
                         <a href="#" panel-name="suite-playwright_demo" title="com.playwright.olympia.FileandBarCheck" class="method navigator-link" hash-for-method="TC019">TC019</a> <!-- method navigator-link -->
@@ -182,118 +128,6 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-playwright_demo" class="panel playwright_demo">
-          <div class="suite-playwright_demo-class-failed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="failed.png"/>
-              <span class="class-name">com.playwright.olympia.FileandBarCheck</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC022">
-                  </a> <!-- TC022 -->
-                  <span class="method-name">TC022</span>
-                  <div class="stack-trace">com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-12682050393322992533\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-12682050393322992533\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-12682050393322992533\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-12682050393322992533\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-	at com.microsoft.playwright.impl.WaitableResult.get(WaitableResult.java:52)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:111)
-	at com.microsoft.playwright.impl.Connection.sendMessage(Connection.java:126)
-	at com.microsoft.playwright.impl.ChannelOwner.sendMessage(ChannelOwner.java:102)
-	at com.microsoft.playwright.impl.FrameImpl.clickImpl(FrameImpl.java:252)
-	at com.microsoft.playwright.impl.PageImpl.lambda$click$17(PageImpl.java:586)
-	at com.microsoft.playwright.impl.LoggingSupport.lambda$withLogging$0(LoggingSupport.java:36)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:47)
-	at com.microsoft.playwright.impl.ChannelOwner.withLogging(ChannelOwner.java:87)
-	at com.microsoft.playwright.impl.LoggingSupport.withLogging(LoggingSupport.java:35)
-	at com.microsoft.playwright.impl.PageImpl.click(PageImpl.java:585)
-	at com.microsoft.playwright.Page.click(Page.java:3741)
-	at com.playwrite.pages.OlympiaFileNBarPage.removefile(OlympiaFileNBarPage.java:65)
-	at com.playwright.olympia.FileandBarCheck.TC022(FileandBarCheck.java:58)
-	at java.base/java.util.ArrayList.forEach(ArrayList.java:1511)
-Caused by: com.microsoft.playwright.TimeoutError: Error {
-  message=&apos;Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-  name=&apos;TimeoutError
-  stack=&apos;TimeoutError: Timeout 30000ms exceeded.
-=========================== logs ===========================
-waiting for locator(&quot;xpath=//span[normalize-space()=&apos;Cancel&apos;]&quot;)
-  locator resolved to &lt;span class=&quot;p-button-label ng-star-inserted&quot;&gt;Cancel&lt;/span&gt;
-attempting click action
-  waiting for element to be visible, enabled and stable
-    element is not enabled - waiting...
-============================================================
-    at ProgressController.run (C:\Users\soura\AppData\Local\Temp\playwright-java-12682050393322992533\package\lib\server\progress.js:88:26)
-    at Frame.click (C:\Users\soura\AppData\Local\Temp\playwright-java-12682050393322992533\package\lib\server\frames.js:998:23)
-    at FrameDispatcher.click (C:\Users\soura\AppData\Local\Temp\playwright-java-12682050393322992533\package\lib\server\dispatchers\frameDispatcher.js:151:30)
-    at DispatcherConnection.dispatch (C:\Users\soura\AppData\Local\Temp\playwright-java-12682050393322992533\package\lib\server\dispatchers\dispatcher.js:312:46)
-}
-	at com.microsoft.playwright.impl.Connection.dispatch(Connection.java:224)
-	at com.microsoft.playwright.impl.Connection.processOneMessage(Connection.java:206)
-	at com.microsoft.playwright.impl.ChannelOwner.runUntil(ChannelOwner.java:109)
-	... 40 more
-... Removed 27 stack frames
-</div> <!-- stack-trace -->
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-playwright_demo-class-failed -->
-          <div class="suite-playwright_demo-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.playwright.olympia.MenuCheck</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC018">
-                  </a> <!-- TC018 -->
-                  <span class="method-name">TC018</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-playwright_demo-class-passed -->
-          <div class="suite-playwright_demo-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.playwright.olympia.Webtables</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC010">
-                  </a> <!-- TC010 -->
-                  <span class="method-name">TC010</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-playwright_demo-class-passed -->
           <div class="suite-playwright_demo-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -323,64 +157,6 @@ attempting click action
               </div> <!-- method -->
             </div> <!-- main-panel-content rounded-window-bottom -->
           </div> <!-- suite-playwright_demo-class-passed -->
-          <div class="suite-playwright_demo-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.playwright.olympia.ListSelection</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC011">
-                  </a> <!-- TC011 -->
-                  <span class="method-name">TC011</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC012">
-                  </a> <!-- TC012 -->
-                  <span class="method-name">TC012</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC013">
-                  </a> <!-- TC013 -->
-                  <span class="method-name">TC013</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC014">
-                  </a> <!-- TC014 -->
-                  <span class="method-name">TC014</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC015">
-                  </a> <!-- TC015 -->
-                  <span class="method-name">TC015</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-playwright_demo-class-passed -->
-          <div class="suite-playwright_demo-class-passed">
-            <div class="main-panel-header rounded-window-top">
-              <img src="passed.png"/>
-              <span class="class-name">com.playwright.olympia.ProductCreation</span>
-            </div> <!-- main-panel-header rounded-window-top -->
-            <div class="main-panel-content rounded-window-bottom">
-              <div class="method">
-                <div class="method-content">
-                  <a name="TC017">
-                  </a> <!-- TC017 -->
-                  <span class="method-name">TC017</span>
-                </div> <!-- method-content -->
-              </div> <!-- method -->
-            </div> <!-- main-panel-content rounded-window-bottom -->
-          </div> <!-- suite-playwright_demo-class-passed -->
         </div> <!-- panel playwright_demo -->
         <div panel-name="test-xml-playwright_demo" class="panel">
           <div class="main-panel-header rounded-window-top">
@@ -397,11 +173,6 @@ attempting click action
   &lt;test thread-count=&quot;5&quot; name=&quot;Test&quot;&gt;
     &lt;classes&gt;
       &lt;class name=&quot;com.playwright.olympia.FileandBarCheck&quot;/&gt;
-      &lt;class name=&quot;com.playwright.olympia.ListSelection&quot;/&gt;
-      &lt;class name=&quot;com.playwright.olympia.MenuCheck&quot;/&gt;
-      &lt;class name=&quot;com.playwright.olympia.Webtables&quot;/&gt;
-      &lt;class name=&quot;com.playwright.olympia.ListSelection&quot;/&gt;
-      &lt;class name=&quot;com.playwright.olympia.ProductCreation&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- Test --&gt;
 &lt;/suite&gt; &lt;!-- playwright demo --&gt;
@@ -415,7 +186,7 @@ attempting click action
           <div class="main-panel-content rounded-window-bottom">
             <ul>
               <li>
-                <span class="test-name">Test (6 classes)</span>
+                <span class="test-name">Test (1 class)</span>
               </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -441,60 +212,24 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(12);
+data.addRows(3);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'TC022')
+data.setCell(0, 1, 'TC019')
 data.setCell(0, 2, 'com.playwright.olympia.FileandBarCheck')
-data.setCell(0, 3, 33831);
+data.setCell(0, 3, 6211);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'TC017')
-data.setCell(1, 2, 'com.playwright.olympia.ProductCreation')
-data.setCell(1, 3, 7525);
+data.setCell(1, 1, 'TC020')
+data.setCell(1, 2, 'com.playwright.olympia.FileandBarCheck')
+data.setCell(1, 3, 1108);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'TC019')
+data.setCell(2, 1, 'TC021')
 data.setCell(2, 2, 'com.playwright.olympia.FileandBarCheck')
-data.setCell(2, 3, 5799);
-data.setCell(3, 0, 3)
-data.setCell(3, 1, 'TC018')
-data.setCell(3, 2, 'com.playwright.olympia.MenuCheck')
-data.setCell(3, 3, 3030);
-data.setCell(4, 0, 4)
-data.setCell(4, 1, 'TC015')
-data.setCell(4, 2, 'com.playwright.olympia.ListSelection')
-data.setCell(4, 3, 2707);
-data.setCell(5, 0, 5)
-data.setCell(5, 1, 'TC014')
-data.setCell(5, 2, 'com.playwright.olympia.ListSelection')
-data.setCell(5, 3, 2635);
-data.setCell(6, 0, 6)
-data.setCell(6, 1, 'TC010')
-data.setCell(6, 2, 'com.playwright.olympia.Webtables')
-data.setCell(6, 3, 2162);
-data.setCell(7, 0, 7)
-data.setCell(7, 1, 'TC012')
-data.setCell(7, 2, 'com.playwright.olympia.ListSelection')
-data.setCell(7, 3, 2024);
-data.setCell(8, 0, 8)
-data.setCell(8, 1, 'TC013')
-data.setCell(8, 2, 'com.playwright.olympia.ListSelection')
-data.setCell(8, 3, 1841);
-data.setCell(9, 0, 9)
-data.setCell(9, 1, 'TC011')
-data.setCell(9, 2, 'com.playwright.olympia.ListSelection')
-data.setCell(9, 3, 1121);
-data.setCell(10, 0, 10)
-data.setCell(10, 1, 'TC020')
-data.setCell(10, 2, 'com.playwright.olympia.FileandBarCheck')
-data.setCell(10, 3, 1078);
-data.setCell(11, 0, 11)
-data.setCell(11, 1, 'TC021')
-data.setCell(11, 2, 'com.playwright.olympia.FileandBarCheck')
-data.setCell(11, 3, 1016);
+data.setCell(2, 3, 1004);
 window.suiteTableData['playwright_demo']= { tableData: data, tableDiv: 'times-div-playwright_demo'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 1 minutes</span>
+              <span class="suite-total-time">Total running time: 8 seconds</span>
               <div id="times-div-playwright_demo">
               </div> <!-- times-div-playwright_demo -->
             </div> <!-- times-div -->
@@ -509,42 +244,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-playwright_demo" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">8 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
-              <span class="ignored-class-name">com.playwright.olympia.MenuCheck</span>
+              <span class="ignored-class-name">com.playwright.olympia.FileandBarCheck</span>
               <div class="ignored-methods-div">
-                <span class="ignored-method-name">initializeTest</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.playwright.olympia.Webtables</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">initializeTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.playwright.olympia.ListSelection</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">initializeTest</span>
-                <br/>
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">com.playwright.olympia.ProductCreation</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">tearDown</span>
-                <br/>
-                <span class="ignored-method-name">initializeTest</span>
+                <span class="ignored-method-name">TC022</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -563,72 +269,19 @@ return data;
               </div> <!-- configuration-test before -->
               <div class="test-method">
                 <span class="method-name">TC019</span>
-                <span class="method-start">4748 ms</span>
+                <span class="method-start">4900 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC020</span>
-                <span class="method-start">10981 ms</span>
+                <span class="method-start">11549 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">TC021</span>
-                <span class="method-start">12431 ms</span>
+                <span class="method-start">13004 ms</span>
               </div> <!-- test-method -->
-              <div class="test-method">
-                <img src="failed.png">
-                </img>
-                <span class="method-name">TC022</span>
-                <span class="method-start">13654 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.playwright.olympia.ListSelection</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC011</span>
-                <span class="method-start">47636 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC012</span>
-                <span class="method-start">48987 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC013</span>
-                <span class="method-start">51428 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC014</span>
-                <span class="method-start">53594 ms</span>
-              </div> <!-- test-method -->
-              <div class="test-method">
-                <span class="method-name">TC015</span>
-                <span class="method-start">56650 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.playwright.olympia.MenuCheck</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC018</span>
-                <span class="method-start">59795 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.playwright.olympia.Webtables</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC010</span>
-                <span class="method-start">63155 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.playwright.olympia.ProductCreation</div> <!-- chronological-class-name -->
-              <div class="test-method">
-                <span class="method-name">TC017</span>
-                <span class="method-start">68204 ms</span>
-              </div> <!-- test-method -->
-            </div> <!-- chronological-class -->
-            <div class="chronological-class">
-              <div class="chronological-class-name">com.playwright.olympia.FileandBarCheck</div> <!-- chronological-class-name -->
               <div class="configuration-test after">
                 <span class="method-name">tearDown</span>
-                <span class="method-start">75924 ms</span>
+                <span class="method-start">14204 ms</span>
               </div> <!-- configuration-test after -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

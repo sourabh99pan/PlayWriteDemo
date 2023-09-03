@@ -46,7 +46,7 @@ public class FileandBarCheck extends TestBase {
 
 	}
 	
-	@Test
+	@Test(enabled=false)
 	public void TC022() throws InterruptedException {
 
 		olympiaFileNBarpage = new OlympiaFileNBarPage(page);

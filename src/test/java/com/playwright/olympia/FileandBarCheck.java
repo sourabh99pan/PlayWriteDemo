@@ -1,12 +1,12 @@
 package com.playwright.olympia;
 
-import java.nio.file.Paths;
+//import java.nio.file.Paths;
 import java.util.*;
 import org.testng.annotations.Test;
 
 import com.playwrite.base.TestBase;
 import com.playwrite.pages.OlympiaFileNBarPage;
-import com.playwrite.pages.OlympiaLisePage;
+//import com.playwrite.pages.OlympiaLisePage;
 
 public class FileandBarCheck extends TestBase {
 	OlympiaFileNBarPage olympiaFileNBarpage;
@@ -28,8 +28,7 @@ public class FileandBarCheck extends TestBase {
 		page.navigate(prop.getProperty("olympiaUrl"));
 
 		olympiaFileNBarpage.clickPerform("Chart");
-		ArrayList<String> alist = new <String>ArrayList(
-		Arrays.asList("bar", "line", "pie", "doughnut", "polarArea", "radar"));
+		final ArrayList<String> alist = new <String>ArrayList(Arrays.asList("bar", "line", "pie", "doughnut", "polarArea", "radar"));
 		olympiaFileNBarpage.checkGraphVisible(alist);
 
 	}

@@ -5,6 +5,7 @@ import java.util.ArrayList;
 import org.testng.annotations.Test;
 
 import com.microsoft.playwright.Locator;
+import com.playwright.utils.ExcelUtils;
 import com.playwrite.base.TestBase;
 import com.playwrite.pages.HomePage;
 import com.playwrite.pages.OlympiaTablePage;
@@ -15,7 +16,7 @@ public class Webtables extends TestBase{
 	OlympiaTablePage olympiapage;
 	
 	@Test
-	public void TC010() throws InterruptedException
+	public void TC010() throws Exception
 	{
 		
 		olympiapage = new OlympiaTablePage(page);
@@ -31,6 +32,20 @@ public class Webtables extends TestBase{
 		for(String e:userDetails)
 		{
 			System.out.println(e);
+			
+		}
+		ExcelUtils.setExcelFile();
+		int row=1;
+		System.out.println(userDetails.get(1));
+		//ExcelUtils.setCellData(userDetails.get(1), 1, 1, System.getProperty("user.dir")+"\\Data\\AgentDetails.xlsx", "AgentDetails");
+		for(int i=0;i<size;)
+		{
+			for(int j=0;j<=5;j++)
+			{
+				ExcelUtils.setCellData(userDetails.get(i), row, j, System.getProperty("user.dir")+"\\Data\\AgentDetails.xlsx", "AgentDetails");
+				i++;
+			}
+			row++;
 			
 		}
 		

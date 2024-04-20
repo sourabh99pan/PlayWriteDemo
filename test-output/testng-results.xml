@@ -1,33 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results ignored="1" total="4" passed="3" failed="0" skipped="0">
+<testng-results ignored="0" total="1" passed="1" failed="0" skipped="0">
   <reporter-output>
   </reporter-output>
-  <suite started-at="2023-09-03T14:19:24 IST" name="playwright demo" finished-at="2023-09-03T14:19:39 IST" duration-ms="15611">
+  <suite started-at="2023-09-21T14:47:33 IST" name="Default suite" finished-at="2023-09-21T14:47:50 IST" duration-ms="16622">
     <groups>
     </groups>
-    <test started-at="2023-09-03T14:19:24 IST" name="Test" finished-at="2023-09-03T14:19:39 IST" duration-ms="15611">
-      <class name="com.playwright.olympia.FileandBarCheck">
-        <test-method is-config="true" signature="initializeTest()[pri:0, instance:com.playwright.olympia.FileandBarCheck@40499e4f]" started-at="2023-09-03T14:19:24 IST" name="initializeTest" finished-at="2023-09-03T14:19:29 IST" duration-ms="4872" status="PASS">
+    <test started-at="2023-09-21T14:47:33 IST" name="Default test" finished-at="2023-09-21T14:47:50 IST" duration-ms="16622">
+      <class name="com.playwright.olympia.Webtables">
+        <test-method is-config="true" signature="initializeTest()[pri:0, instance:com.playwright.olympia.Webtables@34bde49d]" started-at="2023-09-21T14:47:33 IST" name="initializeTest" finished-at="2023-09-21T14:47:37 IST" duration-ms="4287" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- initializeTest -->
-        <test-method signature="TC019()[pri:0, instance:com.playwright.olympia.FileandBarCheck@40499e4f]" started-at="2023-09-03T14:19:29 IST" name="TC019" finished-at="2023-09-03T14:19:35 IST" duration-ms="6211" status="PASS">
+        <test-method signature="TC010()[pri:0, instance:com.playwright.olympia.Webtables@34bde49d]" started-at="2023-09-21T14:47:37 IST" name="TC010" finished-at="2023-09-21T14:47:49 IST" duration-ms="11720" status="PASS">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- TC019 -->
-        <test-method signature="TC020()[pri:0, instance:com.playwright.olympia.FileandBarCheck@40499e4f]" started-at="2023-09-03T14:19:35 IST" name="TC020" finished-at="2023-09-03T14:19:36 IST" duration-ms="1108" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC020 -->
-        <test-method signature="TC021()[pri:0, instance:com.playwright.olympia.FileandBarCheck@40499e4f]" started-at="2023-09-03T14:19:37 IST" name="TC021" finished-at="2023-09-03T14:19:38 IST" duration-ms="1004" status="PASS">
-          <reporter-output>
-          </reporter-output>
-        </test-method> <!-- TC021 -->
-        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.playwright.olympia.FileandBarCheck@40499e4f]" started-at="2023-09-03T14:19:38 IST" name="tearDown" finished-at="2023-09-03T14:19:39 IST" duration-ms="1393" status="PASS">
+        </test-method> <!-- TC010 -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:com.playwright.olympia.Webtables@34bde49d]" started-at="2023-09-21T14:47:49 IST" name="tearDown" finished-at="2023-09-21T14:47:50 IST" duration-ms="571" status="PASS">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- tearDown -->
-      </class> <!-- com.playwright.olympia.FileandBarCheck -->
-    </test> <!-- Test -->
-  </suite> <!-- playwright demo -->
+      </class> <!-- com.playwright.olympia.Webtables -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
 </testng-results>

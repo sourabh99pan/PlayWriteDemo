@@ -19,11 +19,11 @@ public class ExcelUtils {
 	private static XSSFWorkbook excelWorkbook;
 	private static XSSFCell cell;
 	private static XSSFRow row;
-	private static String sheetPath = System.getProperty("user.dir")+"\\Data\\OlympicTestData.xlsx";
-	private static String sheetName = "ProductDetails";
+	private static String sheetPath = System.getProperty("user.dir")+"\\Data\\OlympicTestdata.xlsx";
+	private static String sheetName = "AgentDetails";
 	//private static final Logger LOG = LogManager.getLogger(ExcelUtils.class);
 
-	private static void setExcelFile() throws IOException {
+	public static void setExcelFile() throws IOException {
 			//LOG.info("Getting sheets from the workbook.");
 			FileInputStream excelFile = new FileInputStream(new File(sheetPath).getAbsolutePath());
 			excelWorkbook = new XSSFWorkbook(excelFile);
@@ -52,6 +52,12 @@ public class ExcelUtils {
 
 	public static void setCellData(String result, int rowNumb, int colNumb, String sheetPath,String sheetName) throws Exception{
 		try{
+			
+			sheetPath = System.getProperty("user.dir")+"\\Data\\AgentDetails.xlsx";
+			 //sheetName = "AgentDetails";
+				FileInputStream excelFile = new FileInputStream(new File(sheetPath));
+				excelWorkbook = new XSSFWorkbook(excelFile);
+				excelSheet = excelWorkbook.getSheetAt(0);
 			row = excelSheet.getRow(rowNumb);
 			cell = row.getCell(colNumb);
 			//LOG.info("Setting results into the excel sheet.");
@@ -64,7 +70,8 @@ public class ExcelUtils {
 			}
 
 			//LOG.info("Creating file output stream.");
-			FileOutputStream fileOut = new FileOutputStream(sheetPath + sheetName);
+			//FileOutputStream fileOut = new FileOutputStream(sheetPath + sheetName);
+			FileOutputStream fileOut = new FileOutputStream(sheetPath);
 			excelWorkbook.write(fileOut);
 			fileOut.flush();
 			fileOut.close();

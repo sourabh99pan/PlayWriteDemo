@@ -27,6 +27,7 @@ public class TestBase {
 	public static Playwright playwright;
 	public static BrowserContext context;
 	
+	//added config function
 	public static void configReader()
 	{
 		BufferedReader reader;

@@ -51,7 +51,7 @@ public class TestBase {
 		catch(FileNotFoundException e)
 		{
 			e.printStackTrace();
-			throw new RuntimeException("Config.properties file have not found at: "+configFilePath);
+			throw new RuntimeException("Config.properties file has not found at: "+configFilePath);
 		}
 	}
 

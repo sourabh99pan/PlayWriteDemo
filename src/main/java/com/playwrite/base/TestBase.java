@@ -17,6 +17,7 @@ import org.testng.annotations.BeforeTest;
 
 
 
+//test base class
 public class TestBase {
 
 	public final static String configFilePath  = "Config//Config.properties";

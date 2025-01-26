@@ -7,6 +7,7 @@ import org.testng.Assert;
 
 import com.microsoft.playwright.Page;
 
+//new function
 public class OlympiaFileNBarPage {
 
 	Page page;

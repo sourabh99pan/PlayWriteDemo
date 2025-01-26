@@ -14,7 +14,7 @@ public class HomePage {
 	private String searchIcon = "div#search button";
 	private String searchPageHeader = "div#content h1";
 	
-	//Page constructor changed1
+	//Page constructor changed2
 	
 	public HomePage(Page page)
 	{

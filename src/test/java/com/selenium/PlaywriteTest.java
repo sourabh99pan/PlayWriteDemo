@@ -15,7 +15,7 @@ public class PlaywriteTest extends TestBase {
 	public void TC_001()
 	{
 			      System.out.println("in Test TC_001");
-			      System.out.println("update from local branch");
+			      System.out.println("check git desktop PR");
             page.navigate("http://google.com");
             System.out.println(page.title());
             page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("TC_001.png")));

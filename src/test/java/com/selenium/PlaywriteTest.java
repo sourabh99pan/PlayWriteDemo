@@ -15,6 +15,7 @@ public class PlaywriteTest extends TestBase {
 	public void TC_001()
 	{
 			      System.out.println("in Test TC_001");
+			      System.out.println("added description");
             page.navigate("http://google.com");
             System.out.println(page.title());
             page.screenshot(new Page.ScreenshotOptions().setPath(Paths.get("TC_001.png")));
@@ -25,7 +26,7 @@ public class PlaywriteTest extends TestBase {
 	@Test
 	public void TC_002()
 	{
-		System.out.println("in Test TC_002");
+		System.out.println("In the Test new TC_002");
 	      page.navigate("https://demoqa.com/text-box");
 	      page.getByPlaceholder("Full Name").click();
 	      page.getByPlaceholder("Full Name").fill("David Smith");

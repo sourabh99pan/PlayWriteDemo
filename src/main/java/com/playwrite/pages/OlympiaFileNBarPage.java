@@ -52,6 +52,7 @@ public class OlympiaFileNBarPage {
 	{
 		//page.click(option.replace("*", optionClick));
 		page.click(primeFaces);
+		Assert.assertEquals(page.isVisible(primeFaces), true);
 		Thread.sleep(5000);
 	}
 	

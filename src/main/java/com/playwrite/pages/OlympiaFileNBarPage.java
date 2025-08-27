@@ -24,6 +24,8 @@ public class OlympiaFileNBarPage {
 	
 	public String cancel = "//span[normalize-space()='Cancel']";
 	
+	public String primeFaces= "//*[@id='templates_form:j_idt59']";
+	
 	//Page constructor new commit 27 aug
 	
 	public OlympiaFileNBarPage(Page page)
@@ -46,9 +48,11 @@ public class OlympiaFileNBarPage {
 		
 	}
 	
-	public void clickPerform(String optionClick)
+	public void clickPerform(String optionClick) throws InterruptedException
 	{
-		page.click(option.replace("*", optionClick));
+		//page.click(option.replace("*", optionClick));
+		page.click(primeFaces);
+		Thread.sleep(5000);
 	}
 	
 	public void chooseAndUploadFile(String path)
